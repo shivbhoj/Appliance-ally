@@ -22,6 +22,31 @@ Appliance Ally is an AI-powered assistant that helps households organize, troubl
 - **Parts Matching:** Identify the exact replacement parts required and compare prices across retailers.
 - **Service Connections:** Discover vetted repair technicians when professional help is necessary.
 
+## Suggested MVP
+
+Focus the first release on a tight, high-value workflow that proves the AI assistant's utility while remaining feasible with a small team:
+
+1. **Guided Appliance Intake**
+   - Mobile-friendly flow to photograph a nameplate and confirm OCR results for brand and model.
+   - Manual entry fallback with smart typeahead for popular brands and model numbers.
+   - Secure storage for purchase date, receipt upload, and warranty expiration reminders.
+
+2. **AI Diagnostic Chat (Text + Photo)**
+   - Conversational interface to describe symptoms and share a supporting photo.
+   - Gemini-powered response that lists likely causes, confidence level, and DIY next steps.
+   - Escalation guidance that flags safety risks and recommends when to contact a professional.
+
+3. **Maintenance Timeline Basics**
+   - Automatically generate a maintenance schedule using manufacturer guidelines for the captured model.
+   - Push reminders via email and in-app notifications for upcoming tasks.
+   - Log completed maintenance events with quick-add notes and optional cost tracking.
+
+4. **Parts Lookup MVP**
+   - Surface frequently replaced parts (filters, hoses, belts) based on the stored model data.
+   - Provide price comparisons for at least two retailers with direct purchase links.
+
+Success can be measured through user activation (first appliance added), diagnostic chat engagement, and completion of the first maintenance reminder.
+
 ## Vision
 
 Appliance Ally aims to become the central hub for home appliance care, reducing downtime, extending appliance lifespan, and empowering users with the knowledge needed to handle repairs confidently.
