@@ -51,3 +51,82 @@ Success can be measured through user activation (first appliance added), diagnos
 
 Appliance Ally aims to become the central hub for home appliance care, reducing downtime, extending appliance lifespan, and empowering users with the knowledge needed to handle repairs confidently.
 
+## Project Structure
+
+```
+Appliance-ally/
+├── frontend/          # React Native mobile app
+├── backend/           # Node.js REST API
+├── database/          # PostgreSQL schema
+└── README.md          # This file
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- PostgreSQL (v12 or higher)
+- React Native development environment
+- Firebase account
+- AWS account (for S3 storage)
+
+### Setup
+
+1. **Database Setup**
+   ```bash
+   cd database
+   # Follow instructions in database/README.md
+   ```
+
+2. **Backend Setup**
+   ```bash
+   cd backend
+   npm install
+   cp .env.example .env
+   # Configure environment variables
+   npm start
+   ```
+
+3. **Frontend Setup**
+   ```bash
+   cd frontend
+   npm install
+   cp .env.example .env
+   # Configure environment variables
+   npm run ios    # For iOS
+   npm run android # For Android
+   ```
+
+## Documentation
+
+- [Frontend Documentation](./frontend/README.md)
+- [Backend Documentation](./backend/README.md)
+- [Database Documentation](./database/README.md)
+
+## Current Status
+
+The foundational codebase has been set up with:
+- ✅ Backend REST API with Express.js
+- ✅ Database schema for PostgreSQL
+- ✅ React Native mobile app structure
+- ✅ Authentication screens (Login/Register)
+- ✅ Home profile creation
+- ✅ Appliance addition screens (manual, photo OCR)
+- ✅ Document upload functionality
+
+### Integration Required
+
+The following integrations are scaffolded and need to be configured:
+- **Firebase Authentication**: User authentication endpoints
+- **AWS S3**: Document storage
+- **OCR Service**: Appliance label extraction (Google Cloud Vision or AWS Textract)
+- **Gemini AI**: Diagnostic chat and AI analysis
+
+## Contributing
+
+This project is currently in development. Contributions are welcome!
+
+## License
+
+MIT

@@ -1,0 +1,27 @@
+{
+  "name": "appliance-ally-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Appliance Ally - AI-powered appliance management app",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "keywords": ["appliance", "maintenance", "ai", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "firebase-admin": "^12.0.0",
+    "multer": "^1.4.5-lts.1",
+    "aws-sdk": "^2.1529.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  }
+}
